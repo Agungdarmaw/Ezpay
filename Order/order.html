@@ -1,0 +1,84 @@
+<html>
+<head>
+	<title>Order</title>
+	<link rel="stylesheet" type="text/css" href="styleorder.css">
+</head>
+<div class="container">
+    <div class="title">
+        <h2>Pemesanan Voucher</h2>
+    </div>
+  <div class="d-flex">
+    <form action="" method="">
+      <label>
+        <span class="userID">No.User ID <span class="required">*</span></span>
+        <input type="text" name="userID" placeholder="Contoh.123456 (2101)" required>
+      </label>
+      <label>
+        <span class="nname">Nick Name <span class="required">*</span></span>
+        <input type="text" name="nname" placeholder="Masukan nama dalam game" required>
+      </label>
+      <label>
+        <span>Email Address <span class="required">*</span></span>
+        <input type="email" name="city"> 
+      </label>
+ </form>
+ <body>
+ <div style="overflow-x:auto;">
+        <label>Pilih Metode Pembayaran</label>
+        <table border=0 cellpadding="10">
+          <tr>
+            <th><input type="checkbox"  value=""><img src="img/bni.png" width="60px" height="20px"></th>
+            <th><input type="checkbox"  value=""><img src="img/logo-bca.png" width="60px" height="20px"></th>
+            <th><input type="checkbox"  value=""><img src="img/bri.png" width="60px" height="25px"></th>
+            <th><input type="checkbox"  value=""><img src="img/bjb.png" width="60px" height="30px"></th>
+            <th><input type="checkbox"  value=""><img src="img/bankdki.png" width="60px" height="25px"></th>
+            <th><input type="checkbox"  value=""><img src="img/bankbb.png" width="60px" height="20px"></th>
+          </tr>
+          <tr>
+            <th><input type="checkbox"  value=""><img src="img/visa.png" width="60px" height="30px"></th>
+            <th><input type="checkbox"  value=""><img src="img/masterc.png" width="60px" height="30px"></th>
+            <th><input type="checkbox"  value=""><img src="img/paypal.png" width="60px" height="20px"></th>
+            <th><input type="checkbox"  value=""><img src="img/alfa.jpg" width="70px" height="50px"></th>
+            <th><input type="checkbox"  value=""><img src="img/indomaret.png" width="60px" height="20px"></th>
+            <th><input type="checkbox"  value=""><img src="img/gopay.jpg" width="65px" height="40px"></th>
+          </tr>
+        </table>
+      </div>
+	  </body>
+    <div class="Yorder">
+      <table>
+        <tr>
+          <th colspan="2">Your order</th>
+        </tr>
+        <tr>
+          <td>Product Name x 2(Qty)</td>
+          <td>$88.00</td>
+        </tr>
+        <tr>
+          <td>Subtotal</td>
+          <td>$88.00</td>
+        </tr>
+        <tr>
+          <td>Shipping</td>
+          <td>Free shipping</td>
+        </tr>
+      </table><br>
+      <div>
+        <input type="radio" name="dbt" value="dbt" checked> Direct Bank Transfer
+      </div>
+      <p>
+          Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.
+      </p>
+      <div>
+        <input type="radio" name="dbt" value="cd"> Cash on Delivery
+      </div>
+      <div>
+        <input type="radio" name="dbt" value="cd"> Paypal <span>
+        <img src="https://www.logolynx.com/images/logolynx/c3/c36093ca9fb6c250f74d319550acac4d.jpeg" alt="" width="50">
+        </span>
+      </div>
+      <button type="button">Place Order</button>
+    </div><!-- Yorder -->
+   </div>
+  </div>
+  </html>

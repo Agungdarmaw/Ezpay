@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html ng-app="">
+<!--- Author: M. ABDU AL-AFGANI
+Youtube : Alaf Gani
+Link : https://www.youtube.com/channel/UCau92MSn47IoJ1SjQw0HpvA
+Instagram : ganialaf97
+-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FORM PAY</title>
+    <link rel="stylesheet" href="cssnya/stylenya.css" type="text/css">
+    <script src="js/javascript.js" type="text/javascript"></script>
+    <script src="js/angular-1.7.5/angular.min.js" type="text/javascript"></script>
+  </head>
+  <body>
+  <div class="container">
+    <h1 style="margin:10px;">Pembayaran</h1>
+    <form class="" action="#" id="form-button" method="post">
+      <label>1. Masukan No ID</label>
+      <input required class="input-form laf" type="number" name="" value="" placeholder="No.id game">
+      <p><h6>Untuk mengetahui User ID Anda, Silakan Klik menu profile dibagian kiri atas pada menu utama game. Dan user ID akan terlihat dibagian bawah Nama Karakter Game Anda. Silakan masukkan User ID Anda untuk menyelesaikan transaksi. Contoh : 12345678(1234)</h6></p>
+      <label>2. Masukkan Nickname In Game</label>
+      <input required class="input-form laf" type="text" name="" value="" placeholder="Nickname in game">
+
+      <div style="overflow-x:auto;" id="form-button" onsubmit="validate()">
+        <label>3. E-mail</label>
+          <input required class="input-form laf" type="email" name="" value="" placeholder="Masukkan E-mail">
+      <label>4. Pilih Metode Pembayaran</label>
+        <table border=0 cellpadding="10">
+          <tr>
+            <th>
+  <select id="select-box" onchange="onChangeValue()" style="width:200px;height:50px;background-color:rgba(0, 255, 21, 0.5);border-color: aliceblue;">
+    <option value="bripay.html">BRI</option>
+    <option value="alfapay.html">Alfamart</option>
+	<option value="indopay.html">Gopay</option>
+  </select>
+  <form action="#" id="form-button" style="display:inline">
+    <input type="submit" class="btn-form-pay" value="Submit" >
+  </form>
+  </th>
+</tr>
+        </table>
+	  </div>
+    </form>
+  </div>
+  </body>
+  <body>
+    <button class="ui button" content="width=device-width, initial-scale=1" onclick="window.history.go(-1);" style="background-color: aquamarine;height:40px;width: 50px;
+    background:rgb(230, 240, 230);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -350px;
+    margin-left: 200px;"><i class="arrow left icon"></i> Back</button>
+  </body>
+<script>
+// load href initially
+document.getElementById('form-button').setAttribute('action', document.getElementById('select-box').value);
+// load href on value change of select
+function onChangeValue() {
+  document.getElementById('form-button').setAttribute('action', document.getElementById('select-box').value);
+  return false;
+}
+</script>
+</html>
+
